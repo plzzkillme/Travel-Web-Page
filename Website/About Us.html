@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> 
+            Lugia | About Us
+        </title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+        <link rel="stylesheet" href="./lugiaCSS.css">
+
+        <script>
+            function handleScroll() {
+                const navi = document.querySelector(".nav");
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 10){
+                    navi.style.backgroundColor = "#FFFFFF";
+                } else {
+                    navi.style.backgroundColor = "hsla(0, 100%, 100%, 0.5)"
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+
+            window.addEventListener('scroll', function() {
+                let scrollPosition = window.pageYOffset;
+                let parallaxBg = document.querySelector('.aboutus1');
+                if (scrollPosition > 1){
+                    parallaxBg.style.backgroundPositionY = -scrollPosition * 0.25 + 'px'; 
+                }
+            })
+
+            function togglePopup() {
+                var popup = document.getElementById('loginPOP1');
+                if (popup.style.display === 'none') {
+                    popup.style.display = 'block';
+                } else {
+                    popup.style.display = 'none';
+                }
+            }
+
+
+
+        </script>
+
+        <meta charset="utf-8"> 
+    </head>
+
+    <body>
+        <div class="nav1">
+            <nav class="nav">
+                <a href="Home.html">HOME</a>
+    
+                <div class="dropdown">
+                    <div class="DD1">
+                    <a href="index.html">DESTINATIONS</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="index.html#INTERlink">International</a>
+                        <a href="index.html#DOMlink">Domestic</a>
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <div class="DD1">
+                    <a href="attraction.html">ATTRACTIONS</a>
+                    </div>
+                    <div class="dropdown-content attractNAV">
+                        <a href="attraction.html#DOM1link">Domestic</a>
+                        <a href="attraction.html#ASIAlink">Asia</a>
+                        <a href="attraction.html#EUlink">Europe</a>
+                        <a href="attraction.html#AUSlink">Australia</a>
+                        <a href="attraction.html#NAlink">North America</a>
+                        <a href="attraction.html#AFRIlink">Africa</a>
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <div class="DD1">
+                    <a href="Cruise.html">CRUISES</a>
+                    </div>
+                    <div class="dropdown-content cruisesNAV">
+                        <a href="Cruise.html#CRoomlink">Room</a>
+                        <a href="Cruise.html#CActlink">Activities</a>
+                        <a href="Cruise.html#Cservicelink">Services</a>
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <div class="DD1">
+                    <a href="inspiration.html">INSPIRATIONS</a>
+                    </div>
+                    <div class="dropdown-content inspiNAV">
+                        <a href="inspiration.html#TIPSlink">Travel Tip</a>
+                        <a href="inspiration.html#TESTIlink">Testimonial</a>
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <div class="DD1">
+                    <a href="About Us.html">ABOUT US</a>
+                    </div>
+                    <div class="dropdown-content aboutusNAV">
+                        <a href="About Us.html#objectivelink">Objective</a>
+                    </div>
+                </div>
+    
+    
+                <nav class="nav2">
+                    <a href=""><img src="..//images/Home/wishlist.png" style="width: 2.1vw;" alt="wishlist"></a>
+                    <a href=""><img src="..//images/Home/search.png" style="width: 1.7vw;margin-top: 0.5vh;" alt="search"></a>
+                    <button id="login0" onclick="togglePopup()" >Log In</button>
+                </nav>
+            </nav>
+            </div>
+    
+            <div id="loginPOP1">
+                <div class="loginPOP">
+                    <div class="loginPOP3">
+                        <img src="../images/logo.png">
+                        <button id="loginX" onclick="togglePopup()">X</button>
+                    </div>
+                    <div class="loginPOP2">
+                        <form method="post" action="#formlink">
+                            <div class="form1">
+    
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <br>
+    
+                            <br>
+                            <input type="text" id="password" name="password" placeholder="Password" required>
+                            <br>
+                            
+                            <button type="submit" id="loginbutton">Log In</button>
+                            </div>
+                        </form>
+                        </div>
+                </div>
+        </div>
+
+        <div class="aboutus1">
+            <div class="aboutus2">
+                <P>About Us</P>
+                <h2>"Travel Recommendation and Inspiration Platform"</h2>
+            </div>
+        </div>
+
+        <img class="SD4" src="..//images/AboutUs/shape_divider2.png">
+
+        <div class="navLINKING">
+            <br id="objectivelink">
+        </div>
+        <div class="objectiv">
+            <div class="objectiv1">
+                <div class="objectiv2">
+                    <h1>Our Objective</h1>
+                </div>
+                <div class="objectiv3">
+                    <div><img src="..//images/AboutUs/Summer.webp"></div>
+                    <div class="objectDESC">Welcome to our travel website, where our main goal is to provide you with comprehensive and helpful recommendations for your next amazing travel experience. Whether you're looking to explore destinations near or far, discover captivating tourist attractions, or embark on thrilling cruises, we're here to inspire and guide you. Our website is a reliable resource, offering a wide range of options tailored to suit every traveler's preferences and interests. Our aim is to empower you to make informed decisions and create unforgettable memories. With our commitment to excellence and passion for travel, we're dedicated to helping you find the perfect destination to experience the world's breathtaking beauty and cultural richness.</div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="navLINKING">
+            <br id="formlink">
+        </div>
+        <div class="footer1">
+            <p>"Explore, Discover, Repeat."</p>
+            <div class="form">
+                <form method="post" action="#formlink">
+                    <div class="form1">
+                    <label for="name">Full Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+            
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+            
+                    <label for="message">Write your Enquiry here...</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+            
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="infooter2">
+            <div class="lugiatravel">
+                <img src="../images/logo.png" alt="Lugia Logo"><br><br>
+                Lugia Travel: Your Inspiration, Your Adventure. Discover extraordinary destinations and personalized travel recommendations on our platform. Let us be your trusted companion on your remarkable journey.
+            </div>
+            <div class="destlist">
+                <h2>DESTINATIONS</h2>
+                <ul class="destlist1">
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                </ul>
+            </div>
+            <div class="company1">
+                <div class="company2">
+                    <p>Company</p>
+                    <ul class="company3">
+                        <li>About Us</li>
+                        <li>Insurance</li>
+                        <li>Privary Policy</li>
+                        <li>Security Policy</li>
+                        <li>Booking Terms</li>
+                        <li>Term Of Use</li>
+                    </ul>
+                </div>
+                <div class="contact1">
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li class="telnum"><a href="tel:+60 12 712 0303" target="_blank">+60 12 712 0303</a></li>
+                        <li class="LugiaEmail"><a href="mailto:lugiatravel@gmail.com" target="_blank">lugiatravel@gmail.com</a></li>
+                        <li class="social">
+                            <a href="https://www.facebook.com/jinggghuiii?mibextid=LQQJ4d" target="_blank"><button id="facebook"><img src="..//images/facebook icon.png" alt="facebook"></button></a>
+                            <a href="https://instagram.com/jinggghuiii?igshid=MzRlODBiNWFlZA==" target="_blank"><button id="insta"><img src="..//images/insta icon.png" alt="Instagram"></button></a>
+                            <a href="https://twitter.com/jhi45204912?s=21&t=NR4oGFWCB8F4FLnmLq4X_w" target="_blank"><button id="twitter"><img src="..//images/twitter icon.png" alt="Twitter"></button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <br>
+        <div class="copyright">&copy;2023 Lugia Travel International</div>
+    </footer>
+</html>

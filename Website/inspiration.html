@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <title>Lugia | Inspiration</title>
+
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./lugiaCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+      function handleScroll() {
+          const navi = document.querySelector(".nav");
+          const scrollPosition = window.scrollY;
+
+          if (scrollPosition > 10){
+              navi.style.backgroundColor = "#FFFFFF";
+          } else {
+              navi.style.backgroundColor = "hsla(0, 100%, 100%, 0.5)"
+          }
+      }
+
+      window.addEventListener("scroll", handleScroll);
+
+      window.addEventListener('scroll', function() {
+          let scrollPosition = window.pageYOffset;
+          let parallaxBg = document.querySelector('.cruise1');
+          if (scrollPosition > 1){
+              parallaxBg.style.backgroundPositionY = -scrollPosition * 0.25 + 'px'; 
+          }
+      })
+
+      function togglePopup() {
+          var popup = document.getElementById('loginPOP1');
+          if (popup.style.display === 'none') {
+              popup.style.display = 'block';
+          } else {
+              popup.style.display = 'none';
+          }
+      }
+
+  </script>
+
+  </head>
+  <body>
+</head>
+
+<body>
+  <div class="nav1">
+    <nav class="nav">
+        <a href="Home.html">HOME</a>
+
+        <div class="dropdown">
+            <div class="DD1">
+            <a href="index.html">DESTINATIONS</a>
+            </div>
+            <div class="dropdown-content">
+                <a href="index.html#INTERlink">International</a>
+                <a href="index.html#DOMlink">Domestic</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="DD1">
+            <a href="attraction.html">ATTRACTIONS</a>
+            </div>
+            <div class="dropdown-content attractNAV">
+                <a href="attraction.html#DOM1link">Domestic</a>
+                <a href="attraction.html#ASIAlink">Asia</a>
+                <a href="attraction.html#EUlink">Europe</a>
+                <a href="attraction.html#AUSlink">Australia</a>
+                <a href="attraction.html#NAlink">North America</a>
+                <a href="attraction.html#AFRIlink">Africa</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="DD1">
+            <a href="Cruise.html">CRUISES</a>
+            </div>
+            <div class="dropdown-content cruisesNAV">
+                <a href="Cruise.html#CRoomlink">Room</a>
+                <a href="Cruise.html#CActlink">Activities</a>
+                <a href="Cruise.html#Cservicelink">Services</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="DD1">
+            <a href="inspiration.html">INSPIRATIONS</a>
+            </div>
+            <div class="dropdown-content inspiNAV">
+                <a href="inspiration.html#TIPSlink">Travel Tip</a>
+                <a href="inspiration.html#TESTIlink">Testimonial</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="DD1">
+            <a href="About Us.html">ABOUT US</a>
+            </div>
+            <div class="dropdown-content aboutusNAV">
+                <a href="About Us.html#objectivelink">Objective</a>
+            </div>
+        </div>
+
+
+        <nav class="nav2">
+            <a href=""><img src="..//images/Home/wishlist.png" style="width: 2.1vw;" alt="wishlist"></a>
+            <a href=""><img src="..//images/Home/search.png" style="width: 1.7vw;margin-top: 0.5vh;" alt="search"></a>
+            <button id="login0" onclick="togglePopup()" >Log In</button>
+        </nav>
+    </nav>
+    </div>
+
+    <div id="loginPOP1">
+        <div class="loginPOP">
+            <div class="loginPOP3">
+                <img src="../images/logo.png">
+                <button id="loginX" onclick="togglePopup()">X</button>
+            </div>
+            <div class="loginPOP2">
+                <form method="post" action="#formlink">
+                    <div class="form1">
+
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br>
+
+                    <br>
+                    <input type="text" id="password" name="password" placeholder="Password" required>
+                    <br>
+                    
+                    <button type="submit" id="loginbutton">Log In</button>
+                    </div>
+                </form>
+                </div>
+        </div>
+</div>
+    <!-- Top Part -->
+    <div class="destination-header">
+      <img src="../images/Website_photo/Inspiration/ins BG.jpg"/>
+      <div class="overlay">
+          <div class="yellow-text">Inspiration</div>
+          <div class="white-text"></div><h3>"Unlock Your Wanderlust: Inspiring Travel Tips, Essential Guides, and Personal Testimonials"</h3></div>
+      </div>
+  </div>
+
+  <img class="SD7" src="../images/Website_photo/Inspiration/shape_divider3.png">
+
+
+              <div class="tips-container">
+                <div class="tips-item">
+                  <div class="hr"></div>
+                  <hr class="thick-black-hr">
+                  <h1>Useful Travel Tips</h1>
+                  <hr class="thick-black-hr">
+                  </div>
+                  
+
+    
+                  <div class="navBLINKING">
+                    <br id="TIPSlink">
+                  </div>
+                  
+<div class="tips">
+  <div class="box">
+    <div class="top-text">Pack Light and Smart</div>
+    <div class="bottom-text">Pack only the essentials to avoid unnecessary weight and save space. Consider versatile clothing options and pack items that can be easily mixed and matched.</div>
+  </div>
+
+  <div class="box">
+    <div class="top-text">Create a Travel Bucket List</div>
+    <div class="bottom-text">Make a list of the destinations and experiences you've always wanted to explore. Having a travel bucket list can inspire and motivate you to embark on new adventures.</div>
+  </div>
+
+  <div class="box">
+    <div class="top-text">Research Your Destination</div>
+    <div class="bottom-text">Before embarking on your journey, take the time to research your destination. Learn about its culture, customs, and local attractions to make the most of your trip.</div>
+  </div>
+
+  <div class="box">
+    <div class="top-text">Respect the Environment</div>
+    <div class="bottom-text">Be mindful of your environmental impact while traveling. Minimize waste, respect wildlife and nature, and follow responsible tourism practices.</div>
+  </div>
+  </div>
+
+  <div class="navCLINKING">
+    <br id="TESTIlink">
+  </div>
+  <div class="testimonial-title">
+    <hr class="thick-black-hr">
+      <h1>Testimonial</h1>
+      <hr class="thick-black-hr">
+    </div>
+  <div class="testimonial-container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div>
+        <div class="carousel-inner" role="listbox">
+        <div class="item active">
+
+            <div class=".carousel-inner > .item > img,
+              .carousel-inner > .item > a > img">
+        
+              <div class="ci">
+
+                <img src="../images/Website_photo/Inspiration/Smiling Man.jpg"></div>
+            <div class="textbox">
+              <div class="ttop-text">"Thanks to this travel recommendation platform, I discovered hidden gems and had an unforgettable trip filled with expert suggestions and personal insights.</div>
+              <div class="bbottom-text"> - Michael Anderson, Malaysia</div>
+            </div>
+            <div class="carousel-caption"></div>
+          </div>
+        </div>
+          <div class="item">
+            <div class="cipm">
+            <img src="../images/Website_photo/Inspiration/Product Manager.jpg"></div>
+            <div class="textboxpm"> 
+              <div class="ttop-text">
+                "With the help of this incredible travel recommendation platform, I stumbled upon remarkable, off-the-beaten-path destinations that made my trip truly remarkable. The personalized insights and expert suggestions ensured I experienced the best of each place, creating memories that will last a lifetime."</div>
+                <div class="bbottom-text"> Alexa Young, Product Manager</div>
+            </div>
+            <div class="carousel-caption"></div>
+          </div>
+          <div class="item">
+            <div class="cipm">
+            <img src="../images/Website_photo/Inspiration/Tech Lead.jpg"></div>
+            <div class="textboxtl">
+              <div class="ttop-text">"Using this amazing travel recommendation platform was a game-changer for my vacation. It led me to extraordinary places I never would have discovered otherwise. The insider tips and expert advice made every moment of my journey special, and I couldn't have asked for a better travel companion. Highly recommended for anyone seeking unique and unforgettable travel experiences!"</div>
+              <div class="bbottom-text"> Don Francis, Tech Lead</div>
+            </div>
+            <div class="carousel-caption"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <link rel="stylesheet" href="./inspiration.css">
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" >
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="image-wrapper">
+    <img src="../images/Website_photo/Inspiration/CA.jpg" alt="Image 1">
+    <div class="overlay">
+      <div class="tttop-text">❛❛</div>
+      <div class="middle-text" >Alexa Young, CA</div>
+      <div class="bbbottom-text">"Your website ignited my passion for exploration, leading me on an epic journey through Africa, encountering majestic wildlife and vibrant cultures."</div>
+    </div>
+    </div>
+  <div class="image-wrapper">
+    <img src="../images/Website_photo/Inspiration/NY.jpg" alt="Image 2">
+    <div class="overlay">
+      <div class="tttop-text">❛❛</div>
+      <div class="middle-text" >Morgan James, NY</div>
+      <div class="bbbottom-text" >"The practical travel tips and inspiring testimonials on this platform made my journey seamless and unforgettable."</div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="../images/Website_photo/Inspiration/MI.jpg" alt="Image 3">
+    <div class="overlay">
+      <div class="tttop-text">❛❛</div>
+      <div class="middle-text" >Lisa Driver, MI</div>
+      <div class="bbbottom-text" >"Your website delivered a family-friendly getaway beyond my expectations, creating magical moments and beautiful memories for my kids."</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+
+
+

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> 
+            Lugia
+        </title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+        <link rel="stylesheet" href="./lugiaCSS.css">
+
+        <script>
+            function handleScroll() {
+                const navi = document.querySelector(".nav");
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 10){
+                    navi.style.backgroundColor = "#FFFFFF";
+                } else {
+                    navi.style.backgroundColor = "hsla(0, 100%, 100%, 0.5)"
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+
+            document.addEventListener("DOMContentLoaded", function () {
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let slides = document.getElementsByClassName("slide");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 8000); 
+            }
+            });
+
+            window.addEventListener('scroll', function() {
+                let scrollPosition = window.pageYOffset;
+                let parallaxBg = document.querySelector('.travel');
+                parallaxBg.style.backgroundPositionY = -scrollPosition * 0.25 + 'px'; 
+            })
+
+            function togglePopup() {
+                var popup = document.getElementById('loginPOP1');
+                if (popup.style.display === 'none') {
+                    popup.style.display = 'block';
+                } else {
+                    popup.style.display = 'none';
+                }
+            }
+
+
+
+        </script>
+
+        <meta charset="utf-8"> 
+    </head>
+
+    <body>
+        <div class="nav1">
+        <nav class="nav">
+            <a href="Home.html">HOME</a>
+
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="index.html">DESTINATIONS</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="index.html#INTERlink">International</a>
+                    <a href="index.html#DOMlink">Domestic</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="attraction.html">ATTRACTIONS</a>
+                </div>
+                <div class="dropdown-content attractNAV">
+                    <a href="attraction.html#DOM1link">Domestic</a>
+                    <a href="attraction.html#ASIAlink">Asia</a>
+                    <a href="attraction.html#EUlink">Europe</a>
+                    <a href="attraction.html#AUSlink">Australia</a>
+                    <a href="attraction.html#NAlink">North America</a>
+                    <a href="attraction.html#AFRIlink">Africa</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="Cruise.html">CRUISES</a>
+                </div>
+                <div class="dropdown-content cruisesNAV">
+                    <a href="Cruise.html#CRoomlink">Room</a>
+                    <a href="Cruise.html#CActlink">Activities</a>
+                    <a href="Cruise.html#Cservicelink">Services</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="inspiration.html">INSPIRATIONS</a>
+                </div>
+                <div class="dropdown-content inspiNAV">
+                    <a href="inspiration.html#TIPSlink">Travel Tip</a>
+                    <a href="inspiration.html#TESTIlink">Testimonial</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="About Us.html">ABOUT US</a>
+                </div>
+                <div class="dropdown-content aboutusNAV">
+                    <a href="About Us.html#objectivelink">Objective</a>
+                </div>
+            </div>
+
+
+            <nav class="nav2">
+                <a href=""><img src="..//images/Home/wishlist.png" style="width: 2.1vw;" alt="wishlist"></a>
+                <a href=""><img src="..//images/Home/search.png" style="width: 1.7vw;margin-top: 0.5vh;" alt="search"></a>
+                <button id="login0" onclick="togglePopup()" >Log In</button>
+            </nav>
+        </nav>
+        </div>
+
+        <div id="loginPOP1">
+            <div class="loginPOP">
+                <div class="loginPOP3">
+                    <img src="../images/logo.png">
+                    <button id="loginX" onclick="togglePopup()">X</button>
+                </div>
+                <div class="loginPOP2">
+                    <form method="post" action="#formlink">
+                        <div class="form1">
+
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <br>
+
+                        <br>
+                        <input type="text" id="password" name="password" placeholder="Password" required>
+                        <br>
+                        
+                        <button type="submit" id="loginbutton">Log In</button>
+                        </div>
+                    </form>
+                    </div>
+            </div>
+    </div>
+
+        <div class="home">
+            <div class="slide">
+                <img src="../images/Home/Home - fuji.jpg" alt="Mount Fuji">
+            <div class="content1">
+                <p>
+                Explore.<br>
+                Discover.<br>
+                Repeat.
+                </p>
+            </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/Home/home2.jpg" alt="Mesa Arch Trail">
+            <div class="content2">
+                <p>
+                Discovering The<br>
+                Beauty Of The Wild
+                </p>
+                <button class="YButton">More Details</button>
+            </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/Home/kualalumpur.jpg" alt="KLCC">
+            <div class="content3">
+                <p>
+                Explore The<br>
+                Urban Wonders<br>
+                </p>
+                <button class="YButton">More Details</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="SD1"><img src="..//images/Home/shape_divider1.png"></div>
+
+        <div class="topPop">
+            <P><h2>Top Destination</h2></P>
+            <p id="top1">Discover Your Dream Destination. Travel with Lugia. Travel Confidently. Travel Safe.</p>
+
+            <div class="dest">
+                <div id="vietnam">
+                    <h3>Vietnam</h3>
+                    <button>More Details</button>
+                </div>
+                <div id="paris">
+                    <h3>Paris</h3>
+                    <button>More Details</button>
+                </div>
+                <div id="england">
+                    <h3>England</h3>
+                    <button>More Details</button>
+                </div>
+                <div id="egypt">
+                    <h3>Egypt</h3>
+                    <button>More Details</button>
+                </div>
+            </div>
+            <div class="dest">
+                <div id="sydney">
+                    <h3>Sydney</h3>
+                    <button>More Details</button>
+                </div>
+                <div id="msia">
+                    <h3>Malaysia</h3>
+                    <button>More Details</button>
+                </div>
+                <div id="greece">
+                    <h3>Greece</h3>
+                    <button>More Details</button>
+                </div>
+                <div id="maldives">
+                    <h3>Maldives</h3>
+                    <button>More Details</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="topPop">
+            <P><h2>Most Popular</h2></P>
+            <p id="top1">"Uncover the Ultimate Travel Experiences: Tours, Cruises, Safaris, and Theme Parks"</p>
+
+            <div class="pop">
+                <div id="themePark">
+                    <button class="tbutton">THEME PARK&nbsp;&nbsp;<b>></b></button>
+                </div>
+                <div id="cruises">
+                    <button class="tbutton">CRUISES&nbsp;&nbsp;<b>></b></button>
+                </div>
+            </div>
+
+            <div class="pop">
+                <div id="island">
+                    <button class="tbutton">ISLAND&nbsp;&nbsp;<b>></b></button>
+                </div>
+                <div id="safari">
+                    <button class="tbutton">SAFARI&nbsp;&nbsp;<b>></b></button>
+                </div>
+            </div>
+
+            <div id="pop1">
+                <div class="circle">
+                </div>
+            </div>
+
+        </div>
+        
+        <div>
+
+        <div class="choosing">
+            <div class="SD2">
+                <img src="..//images/Home/shape_divider2.png">
+            </div>
+        <div class="choose">
+            <div class="choose1">
+                <p>WHY CHOOSE US?</p>
+                <h2>FIND TRAVEL PERFECTION, WITH THE<br>WISDOM OF EXPERTS</h2>
+            </div>
+            <div class="choose2">
+                <div class="choose3">
+                    <div class="image"><img src="..//images/Home/map.png" alt="map"></div>
+                    <h2>Expert Recommendations</h2>
+                    <div>Our team of travel enthusiasts scours the globe to bring you the most captivating destinations and experiences. </div>
+                </div>
+                <div class="choose3">
+                    <div class="image"><img src="..//images/Home/travel.png" alt="globe"></div>
+                    <h2>World Class Service</h2>
+                    <div>We offer best in class services with attention to detail, supported by guaranteed SLAs</div>
+                </div>
+                <div class="choose3">
+                    <div class="image"><img src="..//images/Home/save-money.png" alt="inspiring"></div>
+                    <h2>Inspiring Content</h2>
+                    <div>Fuel your wanderlust with our inspiring content, including captivating stories, stunning visuals, and travel tips from seasoned explorers.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="travel">
+            <div class="TTips">
+                <h1>Travel tips and<br>essentials</h1>
+                <div>"Insider Insights and Essential Know-How for<br>Seamless Travel"</div>
+                <button class="YButton">More Details</button>
+            </div>
+            <div class="Testi">
+                <h1>Testimonial<br>(reviews)</h1>
+                <div>"Real Stories, Memorable Journeys: Hear<br>What Our Travelers Say"</div>
+                <button class="WButton">More Details</button>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="navLINKING">
+            <br id="formlink">
+        </div>
+        <div class="footer1">
+            <p>"Explore, Discover, Repeat."</p>
+            <div class="form">
+                <form action="#formlink" method="post">
+                <div class="form1">
+                <label for="name">Full Name</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+                <br>
+        
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+        
+                <label for="message">Write your Enquiry here...</label>
+                <br>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+        
+                <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        <div class="footer2">
+            <div class="infooter2">
+            <div class="lugiatravel">
+                <img src="../images/logo.png" alt="Lugia Logo"><br><br>
+                Lugia Travel: Your Inspiration, Your Adventure. Discover extraordinary destinations and personalized travel recommendations on our platform. Let us be your trusted companion on your remarkable journey.
+            </div>
+            <div class="destlist">
+                <h2>DESTINATIONS</h2>
+                <ul class="destlist1">
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                    <li><a>Destination 1</a></li>
+                </ul>
+            </div>
+            <div class="company1">
+                <div class="company2">
+                    <p>Company</p>
+                    <ul class="company3">
+                        <li>About Us</li>
+                        <li>Insurance</li>
+                        <li>Privary Policy</li>
+                        <li>Security Policy</li>
+                        <li>Booking Terms</li>
+                        <li>Term Of Use</li>
+                    </ul>
+                </div>
+                <div class="contact1">
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li class="telnum"><a href="tel:+60 12 712 0303" target="_blank">+60 12 712 0303</a></li>
+                        <li class="LugiaEmail"><a href="mailto:lugiatravel@gmail.com" target="_blank">lugiatravel@gmail.com</a></li>
+                        <li class="social">
+                            <a href="https://www.facebook.com/jinggghuiii?mibextid=LQQJ4d" target="_blank"><button id="facebook"><img src="..//images/facebook icon.png" alt="facebook"></button></a>
+                            <a href="https://instagram.com/jinggghuiii?igshid=MzRlODBiNWFlZA==" target="_blank"><button id="insta"><img src="..//images/insta icon.png" alt="Instagram"></button></a>
+                            <a href="https://twitter.com/jhi45204912?s=21&t=NR4oGFWCB8F4FLnmLq4X_w" target="_blank"><button id="twitter"><img src="..//images/twitter icon.png" alt="Twitter"></button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">&copy;2023 Lugia Travel International</div>
+    </footer>
+</html>

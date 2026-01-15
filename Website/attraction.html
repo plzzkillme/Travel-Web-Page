@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <title>Lugia | Attractions</title>
+
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./lugiaCSS.css">
+
+    <script>
+        function handleScroll() {
+            const navi = document.querySelector(".nav");
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 10){
+                navi.style.backgroundColor = "#FFFFFF";
+            } else {
+                navi.style.backgroundColor = "hsla(0, 100%, 100%, 0.5)"
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+        window.addEventListener('scroll', function() {
+            let scrollPosition = window.pageYOffset;
+            let parallaxBg = document.querySelector('.cruise1');
+            if (scrollPosition > 1){
+                parallaxBg.style.backgroundPositionY = -scrollPosition * 0.25 + 'px'; 
+            }
+        })
+
+        function togglePopup() {
+            var popup = document.getElementById('loginPOP1');
+            if (popup.style.display === 'none') {
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Top Part -->
+    <div class="nav1">
+        <nav class="nav">
+            <a href="Home.html">HOME</a>
+
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="index.html">DESTINATIONS</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="index.html#INTERlink">International</a>
+                    <a href="index.html#DOMlink">Domestic</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="attraction.html">ATTRACTIONS</a>
+                </div>
+                <div class="dropdown-content attractNAV">
+                    <a href="attraction.html#DOM1link">Domestic</a>
+                    <a href="attraction.html#ASIAlink">Asia</a>
+                    <a href="attraction.html#EUlink">Europe</a>
+                    <a href="attraction.html#AUSlink">Australia</a>
+                    <a href="attraction.html#NAlink">North America</a>
+                    <a href="attraction.html#AFRIlink">Africa</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="Cruise.html">CRUISES</a>
+                </div>
+                <div class="dropdown-content cruisesNAV">
+                    <a href="Cruise.html#CRoomlink">Room</a>
+                    <a href="Cruise.html#CActlink">Activities</a>
+                    <a href="Cruise.html#Cservicelink">Services</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="inspiration.html">INSPIRATIONS</a>
+                </div>
+                <div class="dropdown-content inspiNAV">
+                    <a href="inspiration.html#TIPSlink">Travel Tip</a>
+                    <a href="inspiration.html#TESTIlink">Testimonial</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <div class="DD1">
+                <a href="About Us.html">ABOUT US</a>
+                </div>
+                <div class="dropdown-content aboutusNAV">
+                    <a href="About Us.html#objectivelink">Objective</a>
+                </div>
+            </div>
+
+
+            <nav class="nav2">
+                <a href=""><img src="..//images/Home/wishlist.png" style="width: 2.1vw;" alt="wishlist"></a>
+                <a href=""><img src="..//images/Home/search.png" style="width: 1.7vw;margin-top: 0.5vh;" alt="search"></a>
+                <button id="login0" onclick="togglePopup()" >Log In</button>
+            </nav>
+        </nav>
+        </div>
+
+        <div id="loginPOP1">
+            <div class="loginPOP">
+                <div class="loginPOP3">
+                    <img src="../images/logo.png">
+                    <button id="loginX" onclick="togglePopup()">X</button>
+                </div>
+                <div class="loginPOP2">
+                    <form method="post" action="#formlink">
+                        <div class="form1">
+
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <br>
+
+                        <br>
+                        <input type="text" id="password" name="password" placeholder="Password" required>
+                        <br>
+                        
+                        <button type="submit" id="loginbutton">Log In</button>
+                        </div>
+                    </form>
+                    </div>
+            </div>
+    </div>
+
+        <div class="attraction-header">
+            <img src="../images/Website_photo/tourist_attraction/attractionheader.jpg">
+            <div class="overlay">
+                <div class="header-text-container">
+                <h1>Explore the world</h1>
+                <h2>Tourist Attraction</h2>
+                <h3 class="header-paragraph">
+                    Let us help you find your next adventure! With a wide range of captivating tourist attractions, both domestic and international, we've curated a collection of destinations that are sure to inspire and fulfill your wanderlust. Scroll down and discover the extraordinary destinations waiting to be explored."
+                </h3>
+            </div>
+        </div>
+    </div>
+
+        <img class="SD5" src="../images/Website_photo/tourist_attraction/shape_divider2.png">
+
+<div id="top-part" class="tp">
+        <div class="continents">
+            <div class="continents-container">
+                <div class="continents-item">
+                    <a href="#top-part"   class="continent-button">View all</a>
+                    <a href="#DOM1link"   class="continent-button">Domestic</a>
+        <a href="#ASIAlink"   class="continent-button">Asia</a>
+        <a href="#EUlink"   class="continent-button">Europe</a>
+    </div>
+
+    <div class="continents-item">
+        <a href="#AUSlink"   class="continent-button">Australia</a>
+        <a href="#NAlink"   class="continent-button">North America</a>
+        <a href="#AFRIlink"   class="continent-button">Africa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Middle Part -->
+    <div id="domestic-section">
+    <div class="domestic-container">
+        <div class="domestic-title">
+            <h1>Domestic</h1>
+            <p>"Discover the Hidden Gems of Malaysia"</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Domestic/domestic - sabah.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> Mount Kinabalu, Sabah </div>
+                    <div>
+                        Malaysia's tallest mountain.
+                    </div>
+                </div>
+            </div>
+
+            <div class="navALINKING">
+                <br id="DOM1link">
+              </div>
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Domestic/domestic - melaka.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Christ Church Melaka </div>
+                    <div>
+                        The oldest functioning Protestant church in Malaysia and is within the jurisdiction of the Lower Central Archdeaconry of the Anglican Diocese of West Malaysia.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Domestic/domestic - selangor.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Federal Territory of Kuala Lumpur </div>
+                    <div>
+                        The capital of Malaysia. Its modern skyline is dominated by the 451m-tall Petronas Twin Towers, a pair of glass-and-steel-clad skyscrapers with Islamic motifs.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Domestic/domestic - genting.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> Genting Highland, Pahang </div>
+                    <div>
+                        A high-altitude hill resort in Malaysia, developed since the 1960s, the site comprises hotels, a shopping mall, restaurants and the Casino de Genting. 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Domestic/domestic - penang.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        George Town, Penang </div>
+                    <div>
+                        The colorful, multicultural capital in Penang. The city is known for its British colonial buildings, Chinese shophouses and mosques
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <div id="asia-section">
+        <div class="domestic-container-a">
+            <div class="domestic-container-australia-section">
+            <div class="domestic-title-a">
+                <h1>Asia</h1>
+                <p>"Unveiling the marvels of Asia"</p>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Asia.Vietnam.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> Hạ Long, Vietnam </div>
+                    <div>
+                        A city on Vietnam’s northern coast, is a jumping-off point for Hạ Long Bay, a broad inlet of dramatic, often mist-covered limestone islands.
+                    </div>
+                </div>
+            </div>
+
+            <div class="navALINKING">
+                <br id="ASIAlink">
+              </div>
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Japan.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Mount Fuji, Sizuoka, Japan
+
+ </div>
+                    <div>
+                        An active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/maldive2.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        
+Noonu Atoll,  Maldives </div>
+                    <div>
+                        An administrative division of the Maldives corresponding to the southern section of Miladhunmadulu Atoll. The capital is Manadhoo.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Asia.China.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> The Great Wall, China </div>
+                    <div>
+                        A series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against nomadic groups.
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+<div id="europe-section">
+    <div class="domestic-container">
+        <div class="domestic-title">
+            <h1>Europe</h1>
+            <p>"Uncover the Charms of Europe"</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Europe.Paris.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> Eiffel Tower, Paris, France </div>
+                    <div>
+                        A Symbol of Parisian Elegance and Iconic Landmark of Romance.
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navALINKING">
+                <br id="EUlink">
+              </div>
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Europe.Greece.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        
+Santorini, Greece </div>
+                    <div>
+                        One of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Europe.England.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        
+Tower Bridge, London, England </div>
+                    <div>
+                        it's London's most striking bridge thanks to its Neo-Gothic architecture and lifting central sections. When it opened, it was the most sophisticated bascule bridge in the world.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Europe.Italy.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Rome, Italy </div>
+                    <div>
+                        The capital city of Italy. The centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+        </div>
+    </div>
+    </div>
+<div id="australia-section">
+    <div class="domestic-container-a">
+        <div class="domestic-container-australia-section">
+        <div class="domestic-title-a">
+            <h1>Australia</h1>
+            <p>"Discover the Wonders Down Under"</p>
+        </div>
+    </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Australia.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Sydney Opera House </div>
+                    <div>
+                        A Symbol of Parisian Elegance and Iconic Landmark of Romance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="navALINKING">
+                <br id="AUSlink">
+              </div>
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Australia2.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Safari, Taronga Zoo Wharf </div>
+                    <div>
+                        Taronga Zoo ferry wharf is located on the northern side of Sydney Harbour serving Taronga Zoo. It is a short walk from Taronga Zoo's Lower Entrance
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+        </div>
+    </div>
+    </div>
+<div id="africa-section">
+    <div class="domestic-container">
+        <div class="domestic-title">
+            <h1>Africa</h1>
+            <p>"Embark on an African Adventure"</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/Africa.egypr.jpeg" class="card-image" />
+
+                <div class="navALINKING">
+                    <br id="AFRIlink">
+                  </div>
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Egypt </div>
+                    <div>
+                        A legacy of kingdoms, culture, architectural advances, and philosophy begin to unfold. Home to many World Heritage sites and a deeply rich history.
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    </div>
+    <div id="NA-section">
+        <div class="domestic-container-a">
+            <div class="domestic-container-australia-section">
+            <div class="domestic-title-a">
+            
+            <h1>North America</h1>
+            <p>"Explore the Vastness of North America"</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/utah.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Mesa Arch, USA </div>
+                    <div>
+                        It is one of most photographed arches in southeast Utah. This location is especially popular at sunrise.
+                    </div>
+                </div>
+            </div>
+
+            <div class="navALINKING">
+                <br id="NAlink">
+              </div>
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/NA.Hollywood.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Hollywood, California </div>
+                    <div>
+                        The destination for all American movies and television shows and is situated in California.  “Walk of Fame” and the Hollywood Sign.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/Website_photo/tourist_attraction/NA.Florida.jpg" class="card-image" />
+
+                <div class="card-content">
+                    <div class="card-title"> 
+                        Walt Disney World Resort, Orlando, Florida </div>
+                        <br>
+                    <div>
+                        An entertainment and recreation center of nearly 40 square miles featuring four theme parks, two water adventure parks; dozens of resort hotels 
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+        </div>
+    </div>
+    </div>
+    <!-- Bottom Part -->
+    <div>
+    </div>
+</body>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <title>Lugia | Destinations</title>
+
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./lugiaCSS.css">
+
+    <script>
+      function handleScroll() {
+          const navi = document.querySelector(".nav");
+          const scrollPosition = window.scrollY;
+
+          if (scrollPosition > 10){
+              navi.style.backgroundColor = "#FFFFFF";
+          } else {
+              navi.style.backgroundColor = "hsla(0, 100%, 100%, 0.5)"
+          }
+      }
+
+      window.addEventListener("scroll", handleScroll);
+
+      window.addEventListener('scroll', function() {
+          let scrollPosition = window.pageYOffset;
+          let parallaxBg = document.querySelector('.cruise1');
+          if (scrollPosition > 1){
+              parallaxBg.style.backgroundPositionY = -scrollPosition * 0.25 + 'px'; 
+          }
+      })
+
+      function togglePopup() {
+          var popup = document.getElementById('loginPOP1');
+          if (popup.style.display === 'none') {
+              popup.style.display = 'block';
+          } else {
+              popup.style.display = 'none';
+          }
+      }
+
+  </script>
+
+</head>
+
+<body>
+    <!-- Top Part -->
+    <div class="nav1">
+      <nav class="nav">
+          <a href="Home.html">HOME</a>
+
+          <div class="dropdown">
+              <div class="DD1">
+              <a href="index.html">DESTINATIONS</a>
+              </div>
+              <div class="dropdown-content">
+                  <a href="index.html#INTERlink">International</a>
+                  <a href="index.html#DOMlink">Domestic</a>
+              </div>
+          </div>
+  
+          <div class="dropdown">
+              <div class="DD1">
+              <a href="attraction.html">ATTRACTIONS</a>
+              </div>
+              <div class="dropdown-content attractNAV">
+                  <a href="attraction.html#DOM1link">Domestic</a>
+                  <a href="attraction.html#ASIAlink">Asia</a>
+                  <a href="attraction.html#EUlink">Europe</a>
+                  <a href="attraction.html#AUSlink">Australia</a>
+                  <a href="attraction.html#NAlink">North America</a>
+                  <a href="attraction.html#AFRIlink">Africa</a>
+              </div>
+          </div>
+  
+          <div class="dropdown">
+              <div class="DD1">
+              <a href="Cruise.html">CRUISES</a>
+              </div>
+              <div class="dropdown-content cruisesNAV">
+                  <a href="Cruise.html#CRoomlink">Room</a>
+                  <a href="Cruise.html#CActlink">Activities</a>
+                  <a href="Cruise.html#Cservicelink">Services</a>
+              </div>
+          </div>
+  
+          <div class="dropdown">
+              <div class="DD1">
+              <a href="inspiration.html">INSPIRATIONS</a>
+              </div>
+              <div class="dropdown-content inspiNAV">
+                  <a href="inspiration.html#TIPSlink">Travel Tip</a>
+                  <a href="inspiration.html#TESTIlink">Testimonial</a>
+              </div>
+          </div>
+  
+          <div class="dropdown">
+              <div class="DD1">
+              <a href="About Us.html">ABOUT US</a>
+              </div>
+              <div class="dropdown-content aboutusNAV">
+                  <a href="About Us.html#objectivelink">Objective</a>
+              </div>
+          </div>
+
+
+          <nav class="nav2">
+              <a href=""><img src="..//images/Home/wishlist.png" style="width: 2.1vw;" alt="wishlist"></a>
+              <a href=""><img src="..//images/Home/search.png" style="width: 1.7vw;margin-top: 0.5vh;" alt="search"></a>
+              <button id="login0" onclick="togglePopup()" >Log In</button>
+          </nav>
+      </nav>
+      </div>
+
+      <div id="loginPOP1">
+          <div class="loginPOP">
+              <div class="loginPOP3">
+                  <img src="../images/logo.png">
+                  <button id="loginX" onclick="togglePopup()">X</button>
+              </div>
+              <div class="loginPOP2">
+                  <form method="post" action="#formlink">
+                      <div class="form1">
+
+                      <br>
+                      <input type="email" id="email" name="email" placeholder="Email" required>
+                      <br>
+
+                      <br>
+                      <input type="text" id="password" name="password" placeholder="Password" required>
+                      <br>
+                      
+                      <button type="submit" id="loginbutton">Log In</button>
+                      </div>
+                  </form>
+                  </div>
+          </div>
+  </div>
+ 
+        <div class="destination-header">
+            <img src="../images/Website_photo/Destination/destinationheader.jpg.jpg"/>
+            <div class="overlay">
+                <div class="yellow-text"><h1>Destination</h1></div>
+                <div class="white-text"></div><h3>Domestic | International</h3></div>
+            </div>
+        </div>
+    
+      <img class="SD6" src="../images/Website_photo/Destination/shape_divider1.png">
+
+    </div>
+        <div class="aeroplane">
+                    <div class="aeroplane-icon">
+                      <img src="../images/Website_photo/Destination/aeroplaneicon.png">
+                      </div>
+
+                <div class=" aeroplane-header">
+                  <hr class="thick-orange-hr"><p>Experience Dreamlike Destinations</p><hr class="thick-orange-hr">
+                    </div>
+        </div>
+
+            
+   
+
+    <!-- Middle Part -->
+    
+    
+    <div class="destination-grid-container">
+      
+      <div class="destination-grid">  
+        <img src="../images/Website_photo/Destination/domesticimage.jpg" alt="Destination Grid Background">
+        <div class="grid-container">
+          <h2 class="center-box-title">Domestic (Malaysia)</h2>
+          <div class="small-box-container">
+            <div class="small-box">Johor</div>
+            <div class="small-box">Selangor</div>
+            <div class="small-box">Pahang</div>
+            <div class="small-box">Sabah</div>
+            <div class="small-box">Penang</div>
+            <div class="small-box">Melaka</div>
+            <div class="small-box">Sarawak</div>
+            <div class="small-box">Perak</div>
+            <div class="small-box">Putrajaya</div>
+          </div>
+          <a href="attraction.html" class="btn-yellow">View All</a>
+        </div>
+        <div class="custom-shape-divider-top-1690920897">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+          <div class="navLINKING">
+            <br id="DOMlink">
+          </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1690922739">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </div>
+    </div>
+    
+      
+ 
+    
+    
+    
+
+
+    <div class="icon">
+      <div class="icon-logo">
+        <img src="../images/Website_photo/Destination/logo lugia.webp">
+      </div>
+    </div>
+
+      <div class="destination-grid-container2">
+
+       <div class="destination-grid">
+       <img src="../images/Website_photo/Destination/internationalimage.jpg" alt="">
+        <div class="grid-container">
+          <h2 class="center-box-title">International</h2>
+         <div class="small-box-container">
+            <div class="small-box">Asia</div>
+            <div class="small-box">North America</div>
+            <div class="small-box">Europe</div>
+            <div class="small-box">Australia</div>
+            <div class="small-box">Africa</div>
+          </div>
+          <a href="attraction.html" class="btn-yellow">View All</a>
+       </div>
+       <div class="custom-shape-divider-top-1690920897">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+          <div class="navLINKING">
+            <br id="INTERlink">
+        </div>
+     </div>
+      <div class="custom-shape-divider-bottom-1690922739">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+     </svg>
+  </div>
+  </div>
+  </div>
+    
+
+    <!-- Bottom Part -->
+    
+</body>
+
+</html>
+      
+
+      
+
+
+      
